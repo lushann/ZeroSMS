@@ -1,6 +1,10 @@
 ZeroSMS
 =======
 
+**Status**: Developing
+
+---
+
 1.android 10有没有可能成功发送class 0 短信？  
 2.diy Rom ？  
 3.其他通用手段  
@@ -40,3 +44,9 @@ com.android.telephony.PhoneFactory is included in telephony/jar. So it not inclu
 [java.lang.SecurityException: No permission to write APN settings](https://stackoverflow.com/questions/51440531/java-lang-securityexception-no-permission-to-write-apn-settings/51440864)
 
 [解决android.permission.WRITE_APN_SETTINGS](https://www.cnblogs.com/zshengfei/p/5344519.html)
+
+---
+
+再一次限定了只能以System app的角色来申请该权限。
+
+---
