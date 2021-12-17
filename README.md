@@ -1,41 +1,29 @@
 ZeroSMS
 =======
 
-ZeroSMS is a proof-of-concept demonstrating a way to send Class 0 SMS on android >=2.3.
-
-/!\ This application only works on rooted phones.
-
-How to install
---------------
-
-Simply use adb to drop it onto your phone:
-
-    adb remount
-    adb push ZeroSms-signed.apk /system/app
-
-And voila !
-
-How to use it
--------------
-
-Type in a phone number (no phonebook pickup, this is a PoC) and a text, then press "Send SMS !". Your SMS is sent.
-
-
-Greetz
-------
-
-Vorex & Kaiyou
-
-
-
-占坑
------
 1.android 10有没有可能成功发送class 0 短信？  
 2.diy Rom ？  
 3.其他通用手段  
 
 
+### 相关资料
 
-相关资料
-----
-1. [stackoverflow - Class 0 SMS (flash SMS) on Android ](https://stackoverflow.com/questions/9123125/class-0-sms-flash-sms-on-android/)
+1.[stackoverflow - Class 0 SMS (flash SMS) on Android ](https://stackoverflow.com/questions/9123125/class-0-sms-flash-sms-on-android/)
+
+2.[android-hidden-api](https://github.com/anggrayudi/android-hidden-api)
+
+3.[Is it possible to access com.android.internal.telephony.PhoneFactory ?](https:github.com/anggrayudi/android-hidden-api/issues/37)
+
+---
+
+This is an internal API, this project only provides Framework hidden API now, such as android.app.StatusBarManager and etc.
+
+Such as those APIs below are NOT included in Framework APIs:
+
+com.android.internal.*
+
+com.android.server.* (in service jar)
+
+com.android.telephony.PhoneFactory is included in telephony/jar. So it not included in this project now. You can try compile AOSP yourself and find those jars in out folder.
+
+---
