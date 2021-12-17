@@ -25,3 +25,17 @@ Greetz
 ------
 
 Vorex & Kaiyou
+
+
+
+占坑
+-----
+1.android 10有没有可能成功发送class 0 短信？
+2.diy Rom ？
+3.其他通用手段
+
+
+
+相关资料
+----
+1. [stackoverflow - Class 0 SMS (flash SMS) on Android ](https://stackoverflow.com/questions/9123125/class-0-sms-flash-sms-on-android/)
