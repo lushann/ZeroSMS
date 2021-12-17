@@ -30,9 +30,9 @@ Vorex & Kaiyou
 
 占坑
 -----
-1.android 10有没有可能成功发送class 0 短信？ 
-2.diy Rom ？ 
-3.其他通用手段 
+1.android 10有没有可能成功发送class 0 短信？  
+2.diy Rom ？  
+3.其他通用手段  
 
 
 
