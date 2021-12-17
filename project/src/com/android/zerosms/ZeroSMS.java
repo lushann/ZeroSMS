@@ -75,6 +75,7 @@ public class ZeroSMS extends Activity {
 	            }
 	        });
 	        
+			// get phone number from contacts
 	        btnContactPick.setOnClickListener(new View.OnClickListener() 
 	        {        	
 	            public void onClick(View v) 
@@ -139,6 +140,7 @@ public class ZeroSMS extends Activity {
 	    	IccSmsInterfaceManager ismsm = phone.getIccSmsInterfaceManager();
 
 			try {
+				// get SMSDispatcher with Reflection
 				Log.d(TAG,"Retrieving mDispatcher ...");
 				f = IccSmsInterfaceManager.class.getDeclaredField("mDispatcher");
 				f.setAccessible(true);
@@ -161,6 +163,7 @@ public class ZeroSMS extends Activity {
 		    	try
 		    	{
 		    		/* Android 2.2 -> 4.0.* */
+					/*  protected void sendRawPdu(byte[] smsc, byte[] pdu, PendingIntent sentIntent, PendingIntent deliveryIntent, String destAddr) */
 			    	Method m = SMSDispatcher.class.getDeclaredMethod("sendRawPdu", b.getClass(), b.getClass(), PendingIntent.class, PendingIntent.class);
 			    	m.setAccessible(true);
 			    	m.invoke(sms_disp, pdus.encodedScAddress, pdus.encodedMessage, null, null);
