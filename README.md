@@ -39,4 +39,4 @@ com.android.telephony.PhoneFactory is included in telephony/jar. So it not inclu
 
 [java.lang.SecurityException: No permission to write APN settings](https://stackoverflow.com/questions/51440531/java-lang-securityexception-no-permission-to-write-apn-settings/51440864)
 
-[解决android.permission.WRITE_APN_SETTINGS](https://blog.csdn.net/chaoyu168/article/details/51555326)
+[解决android.permission.WRITE_APN_SETTINGS](https://www.cnblogs.com/zshengfei/p/5344519.html)
