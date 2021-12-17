@@ -50,3 +50,6 @@ com.android.telephony.PhoneFactory is included in telephony/jar. So it not inclu
 再一次限定了只能以System app的角色来申请该权限。
 
 ---
+
+
+//TODO：醒了编译一下AOSP，做个System试试
