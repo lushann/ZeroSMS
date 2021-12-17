@@ -27,3 +27,14 @@ com.android.server.* (in service jar)
 com.android.telephony.PhoneFactory is included in telephony/jar. So it not included in this project now. You can try compile AOSP yourself and find those jars in out folder.
 
 ---
+
+
+基本到这一步，就被限制到没啥通用性了，app需要和系统app使用相同的证书。
+
+---
+
+[Can a telephony.Phone object be instantiated through the sdk?](https://stackoverflow.com/questions/2143754/can-a-telephony-phone-object-be-instantiated-through-the-sdk)
+
+[How can I sign Android application with AOSP certificate](https://stackoverflow.com/questions/57870911/how-can-i-sign-android-application-with-aosp-certificate)
+
+[java.lang.SecurityException: No permission to write APN settings](https://stackoverflow.com/questions/51440531/java-lang-securityexception-no-permission-to-write-apn-settings/51440864)
