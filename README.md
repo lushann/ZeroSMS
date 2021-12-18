@@ -52,4 +52,4 @@ com.android.telephony.PhoneFactory is included in telephony/jar. So it not inclu
 ---
 
 
-//TODO：醒了编译一下AOSP，做个System试试
+TODO：编译 Aosp 10 for pixel 3a 并提取证书和 framework/
